@@ -1,0 +1,167 @@
+/* Start Global Rules */
+:root {
+    --main-color: #0b50b1;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End Global Rules */
+
+
+
+/* Start Header  */
+
+.sign-in {
+    position: relative;
+
+}
+
+.sign-in::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 40%;
+    background-color: #d9dbea91;
+    z-index: -1;
+}
+
+.sign-in .logo {
+    display: block;
+    color: var(--main-color);
+    font-size: 40px;
+    font-weight: bold;
+    padding: 20px 20px 30px;
+    height: 80px;
+}
+
+.sign-in .content {
+    display: grid;
+    grid-template-columns: 350px calc(100% - 370px);
+    gap: 20px;
+}
+
+.sign-in .content .main-title {
+    display: grid;
+    justify-content: end;
+    align-items: center;
+    margin: auto 0;
+    color: var(--main-color);
+}
+
+.sign-in .content .main-title .top_title {
+    font-size: 32px;
+    font-weight: 400;
+    margin: 0;
+    
+}
+.sign-in .content .main-title .bottom_title {
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 1;
+    margin: 0;
+    letter-spacing: 1;
+    text-align: end;
+}
+
+.sign-in .content .form {
+    padding-left: 90px;
+    
+}
+
+.sign-in .content .form > h2 {
+    border-bottom: 2px solid var(--main-color);
+    width: fit-content;
+    z-index: 4;
+}
+
+.sign-in .form .input-box {
+    width: 600px;
+}
+
+.sign-in .form .input-box .name-box h3{
+    margin: 0px 0 5px;
+}
+
+.sign-in .form .input-box .password-box h3 {
+    margin: 30px 0 5px
+}
+
+
+.sign-in .form .input-box input {
+    width: 400px;
+    padding: 10px 0 10px 10px;
+    height: 25px;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    color: #272727;
+    font-size: 20px;
+}
+
+.sign-in .form .input-box input:focus {
+    outline: none;
+}
+
+.sign-in .form .input-box a {
+    font-size: 12px;
+}
+
+.sign-in .form button {
+    height: 30px;
+    width: 100px;
+    margin-top: 10px;
+    border: none;
+    font-weight: bold;
+    border-radius: 5%;
+    cursor: pointer;
+    
+}
+
+.sign-in .form button a {
+  color: rgb(47, 34, 62);
+}
+
+/* End Header  */
+
